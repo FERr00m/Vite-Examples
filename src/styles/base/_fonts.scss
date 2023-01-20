@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+/*=====Fonts=====*/
+/*Lato*/
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato-Regular'), local('Lato'),
+    url('../fonts/latoregular.woff2') format('woff2'),
+    url('../fonts/latoregular.woff') format('woff'),
+    url('../fonts/latoregular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Medium';
+  src: local('Lato-Medium'), url('../fonts/latomedium.woff2') format('woff2'),
+    url('../fonts/latomedium.woff') format('woff'),
+    url('../fonts/latomedium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: local('Lato-Black'), url('../fonts/latoblack.woff2') format('woff2'),
+    url('../fonts/latoblack.woff') format('woff'),
+    url('../fonts/latoblack.ttf') format('ttf');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Lg*/
+@font-face {
+  font-family: 'lg';
+  src: local('lg'), url('../fonts/lg.woff2') format('woff2'),
+    url('../fonts/lg.woff') format('woff'), url('../fonts/lg.ttf') format('ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+/*=====End Fonts=====*/
