@@ -16,4 +16,11 @@ import './libs/js/lazyload.min.js';
 Fancybox.bind('[data-fancybox]', {
   // Your options go here
 });
-new Splide('.splide').mount();
+
+let elems = document.querySelectorAll('.parallax');
+let instances = M.Parallax.init(elems);
+
+let splide: HTMLElement = document.querySelector('.splide')!;
+if (splide) {
+  new Splide(splide).mount();
+}
