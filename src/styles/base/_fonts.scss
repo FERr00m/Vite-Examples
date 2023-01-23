@@ -34,13 +34,12 @@
   font-display: swap;
 }
 
-/*Lg*/
+/*Material Icons*/
 @font-face {
-  font-family: 'lg';
-  src: local('lg'), url('../fonts/lg.woff2') format('woff2'),
-    url('../fonts/lg.woff') format('woff'), url('../fonts/lg.ttf') format('ttf');
+  font-family: 'Material Icons';
   font-style: normal;
-  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/material-icons.woff2') format('woff2');
 }
 
 /*=====End Fonts=====*/
