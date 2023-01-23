@@ -1,6 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import pugPlugin from 'vite-plugin-pug';
+import autoprefixer from 'autoprefixer';
 
 interface Options {
   pretty: boolean;
@@ -18,6 +19,13 @@ export default defineConfig({
     },
   },
   plugins: [pugPlugin(options, locals)],
+  css: {
+    postcss: {
+      plugins: [
+        autoprefixer({}), // add options if needed
+      ],
+    },
+  },
   server: {
     open: '/index.html',
     port: 5000,
