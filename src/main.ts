@@ -17,3 +17,7 @@ M.Parallax.init(parallax);
 
 let sidenav = document.querySelectorAll('.sidenav');
 M.Sidenav.init(sidenav);
+
+//Blocks
+import './blocks/input/input.ts';
+import './blocks/input/input.scss';
