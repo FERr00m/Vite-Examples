@@ -1,10 +1,11 @@
 extends ../templates/layout
 
 block main-content
-  main.about-page
-    section.about-page__promo
+  main.main
+    section
       ._container
-        include ../../blocks/input/input.pug
+        input(class="input js-input js-input_type_phone" type="text")
+        input(class="input js-input js-input_type_phone" type="text")
         h1.title О компании
         section.splide(aria-label='Splide Basic HTML Example')
           .splide__track

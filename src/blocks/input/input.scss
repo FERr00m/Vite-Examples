@@ -1,7 +1,9 @@
-@import './_has-error/input_has-error.scss';
-
 .input {
   width: 200px;
   color: black;
   background-color: chocolate;
+
+  &_has-error {
+    border: 2px solid red !important;
+  }
 }

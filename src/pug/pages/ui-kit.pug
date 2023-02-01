@@ -1,0 +1,17 @@
+main.main
+  ._container
+    h1.h1.title.title_center UI KIT
+  section.main__ui-section
+    ._container
+      a(href="/") Назад
+      h2.h2 Заголовки
+      hr
+      - let n=0
+        while n < 6
+          h1(class=`h${++n}`) Заголовок h
+            =n
+      h2.h2 Кнопки
+      hr
+      button.button Button
+      button.button.button_info Info
+      button.button.button_disabled(disabled) Disabled

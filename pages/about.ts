@@ -12,5 +12,3 @@ let splide = document.querySelector<HTMLElement>('.splide');
 if (splide) {
   new Splide(splide).mount();
 }
-
-console.log(1);

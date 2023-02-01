@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+}
+
+.h1 {
+  margin: rem(35px) 0 rem(15px);
+  font-size: rem(45px);
+}
+
+.h2 {
+  margin: rem(30px) 0 rem(12px);
+  font-size: rem(40px);
+}
+
+.h3 {
+  margin: rem(25px) 0 rem(9px);
+  font-size: rem(35px);
+}
+
+.h4 {
+  margin: rem(20px) 0 rem(6px);
+  font-size: rem(30px);
+}
+
+.h5 {
+  margin: rem(15px) 0 rem(3px);
+  font-size: rem(25px);
+}
+
+.h6 {
+  margin: rem(10px) 0 0;
+  font-size: rem(20px);
+}
+
+.title {
+  text-transform: uppercase;
+
+  &_center {
+    text-align: center;
+  }
+}

@@ -1,23 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-$Roboto: 'Roboto';
-$RobotoMedium: 'Roboto-Medium';
-$RobotoBold: 'Roboto-Bold';
-
 $Lato: 'Lato';
 $LatoMedium: 'Lato-Medium';
 $LatoBlack: 'Lato-Black';
 
 /// Regular font family
 /// @type List
-$text-font-stack: Arial, -apple-system, system-ui, BlinkMacSystemFont,
-  'Segoe UI', Roboto, 'Helvetica Neue', sans-serif !default;
+$text-font-stack: Arial,
+-apple-system,
+system-ui,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+'Helvetica Neue',
+sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-  'Monaco', monospace !default;
+$code-font-stack: 'Courier New',
+'DejaVu Sans Mono',
+'Bitstream Vera Sans Mono',
+'Monaco',
+monospace !default;
 
 /// Copy text color
 /// @type Color
@@ -44,20 +49,18 @@ $bg-main-color: #ffffff !default;
 /// @type Length
 $max-width: 1320px !default;
 
-$sizes: (
-  'xs': 20em,  // 320px
-  'sm': 36em,  // 576px
-  'md': 48em,  // 768px
-  'lg': 62em,  // 992px
-  'xl': 75em,  // 1200px
+$sizes: ('xs': 20em, // 320px
+  'sm': 36em, // 576px
+  'md': 48em, // 768px
+  'lg': 62em, // 992px
+  'xl': 75em, // 1200px
 );
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 
-$container-size: (
-  'xxxs': 330px,
+$container-size: ('xxxs': 330px,
   'xxs': 350px,
   'xs': 400px,
   'sm': 540px,
@@ -67,30 +70,21 @@ $container-size: (
   'xxl': 1320px,
 ) !default;
 
-$breakpoints: (
-  'xxxs': (
-    min-width: 320px,
+$breakpoints: ('xxxs': (min-width: 320px,
   ),
-  'xxs': (
-    min-width: 375px,
+  'xxs': (min-width: 375px,
   ),
-  'xs': (
-    min-width: 425px,
+  'xs': (min-width: 425px,
   ),
-  'sm': (
-    min-width: 576px,
+  'sm': (min-width: 576px,
   ),
-  'md': (
-    min-width: 768px,
+  'md': (min-width: 768px,
   ),
-  'lg': (
-    min-width: 992px,
+  'lg': (min-width: 992px,
   ),
-  'xl': (
-    min-width: 1200px,
+  'xl': (min-width: 1200px,
   ),
-  'xxl': (
-    min-width: 1400px,
+  'xxl': (min-width: 1400px,
   ),
 ) !default;
 

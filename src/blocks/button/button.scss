@@ -1,0 +1,52 @@
+@import '../../styles/abstracts/mixins';
+
+$color: #000;
+$BGcolor: #a200ff;
+
+$info-color: #fff;
+$infoBGcolor: #00d9ff;
+
+button[disabled] {
+  cursor: not-allowed;
+}
+
+.button {
+  max-width: 200px;
+  color: $color;
+  padding: 1em 2em;
+  background-color: $BGcolor;
+  cursor: pointer;
+  border: 1px solid #000;
+  outline: none;
+
+  @include hover-active($BGcolor);
+
+  &:focus {
+    outline: 2px ridge #000;
+  }
+
+  &_disabled {
+    cursor: not-allowed;
+    outline: none;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $BGcolor;
+    }
+
+    &:focus {
+      background-color: $BGcolor;
+    }
+
+    &:active {
+      background-color: $BGcolor;
+    }
+  }
+
+  &_info {
+    color: $info-color;
+    background-color: $infoBGcolor;
+
+    @include hover-active($infoBGcolor);
+  }
+}

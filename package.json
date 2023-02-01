@@ -17,12 +17,14 @@
     "sass": "^1.57.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
+    "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-pug": "^0.3.2"
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
     "@splidejs/splide": "^4.1.4",
     "gsap": "^3.11.4",
+    "imask": "^6.4.3",
     "materialize-css": "^1.0.0-rc.2"
   }
 }

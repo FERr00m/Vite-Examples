@@ -1,13 +1,2 @@
-nav.light-blue.lighten-1(role='navigation')
-  .nav-wrapper.container
-    a#logo-container.brand-logo(href='#') Logo
-    ul.right.hide-on-med-and-down
-      each link in links
-        li
-          a(href=`${link.path}`)= link.name
-    ul#nav-mobile.sidenav
-      each link in links
-        li
-          a(href=`${link.path}`)= link.name
-    a.sidenav-trigger(href='#' data-target='nav-mobile')
-      i.material-icons menu
+header.header
+  ._container HEADER
