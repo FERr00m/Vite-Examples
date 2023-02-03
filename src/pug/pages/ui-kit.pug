@@ -8,8 +8,10 @@ main.main
       hr
       - let n=0
         while n < 6
-          h1(class=`h${++n}`) Заголовок h
+          h1(class=`h${++n}`) Заголовок 
+            ='<h'
             =n
+            ='>'
       h2.h2 Кнопки
       hr
       button.button(data-tilt data-tilt-reverse="true") Button

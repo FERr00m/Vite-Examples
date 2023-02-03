@@ -1,4 +1,12 @@
-@import '../../styles/abstracts/mixins';
+@mixin hover-active($color) {
+  &:hover {
+    background-color: lighten($color, 10%);
+  }
+
+  &:active {
+    background-color: lighten($color, 25%);
+  }
+}
 
 $color: #000;
 $BGcolor: #a200ff;

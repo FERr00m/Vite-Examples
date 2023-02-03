@@ -2,15 +2,18 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import pugPlugin from 'vite-plugin-pug';
 import autoprefixer from 'autoprefixer';
-import viteImagemin from 'vite-plugin-imagemin';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 interface Options {
   pretty: boolean;
 }
 const options: Options = { pretty: true }; // FIXME: pug pretty is deprecated!
-const locals = { name: 'My Pug' };
+const locals = { name: 'MyPug' };
 
 export default defineConfig({
+  resolve: {
+    preserveSymlinks: true,
+  },
   build: {
     rollupOptions: {
       input: {
@@ -19,35 +22,26 @@ export default defineConfig({
         main: resolve(__dirname, 'pages/main.html'),
         uikit: resolve(__dirname, 'pages/ui-kit.html'),
       },
+      output: {
+        assetFileNames: `assets/[name].[ext]`,
+        chunkFileNames: `assets/main.js`,
+      },
     },
+    target: 'es2017',
   },
   plugins: [
     pugPlugin(options, locals),
-    viteImagemin({
-      gifsicle: {
-        optimizationLevel: 7,
-        interlaced: false,
+    ViteImageOptimizer({
+      //include: 'public/img/**/*',
+      includePublic: false,
+      jpeg: {
+        quality: 80,
       },
-      optipng: {
-        optimizationLevel: 7,
+      jpg: {
+        quality: 80,
       },
-      mozjpeg: {
-        quality: 90,
-      },
-      pngquant: {
-        quality: [0.8, 0.9],
-        speed: 4,
-      },
-      svgo: {
-        plugins: [
-          {
-            name: 'removeViewBox',
-          },
-          {
-            name: 'removeEmptyAttrs',
-            active: false,
-          },
-        ],
+      png: {
+        quality: 80,
       },
     }),
   ],
@@ -57,6 +51,7 @@ export default defineConfig({
         autoprefixer({}), // add options if needed
       ],
     },
+    devSourcemap: true,
   },
   server: {
     open: '/index.html',
